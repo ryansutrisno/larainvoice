@@ -85,12 +85,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://trazmedia.com">Website</a>
                     <a href="https://www.facebook.com/trazmedia/">Facebook</a>
                     <a href="https://twitter.com/trazmedia">Twitter</a>
                     <a href="https://www.instagram.com/trazmediacom/">Instagram</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <div style="margin:100px" class="flex-center">Copyright &copy; 2020 &nbsp; <a href="https://trazmedia.com">Trazmedia</a>&nbsp;. All right reserved </div>
             </div>
         </div>
     </body>

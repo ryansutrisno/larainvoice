@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Selamat datang di aplikasi Larainvoice!
                 </div>
             </div>
         </div>
