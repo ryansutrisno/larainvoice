@@ -30,7 +30,7 @@ class CustomerController extends Controller
         ]);
 
         try {
-            $customers = Customer::create([
+            $customer = Customer::create([
                 'name' => $request->name,
                 'phone' => $request->phone,
                 'address' => $request->address,
@@ -44,7 +44,7 @@ class CustomerController extends Controller
 
     public function edit($id)
     {
-        $customers = Customer::find($id);
+        $customer = Customer::find($id);
         return view('customer.edit', compact('customers'));
     }
 
@@ -58,8 +58,8 @@ class CustomerController extends Controller
         ]);
 
         try {
-            $customers = Customer::find($id);
-            $customers->update([
+            $customer = Customer::find($id);
+            $customer->update([
                 'name' => $request->name,
                 'phone' => $request->phone,
                 'address' => $request->address
@@ -72,8 +72,8 @@ class CustomerController extends Controller
 
     public function destroy($id)
     {
-        $customers = Customer::find($id);
-        $customers->delete();
-        return redirect()->back()->with(['success' => '<strong>' . $customers-name . '</strong> Berhasil dihapus']);
+        $customer = Customer::find($id);
+        $customer->delete();
+        return redirect()->back()->with(['success' => '<strong>' . $customer->name . '</strong> Berhasil dihapus']);
     }
 }
